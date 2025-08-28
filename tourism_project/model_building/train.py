@@ -38,7 +38,7 @@ numeric_features = ['Age', 'CityTier', 'DurationOfPitch', 'NumberOfPersonVisitin
        'NumberOfFollowups', 'PreferredPropertyStar', 'NumberOfTrips',
        'Passport', 'PitchSatisfactionScore', 'OwnCar',
        'NumberOfChildrenVisiting', 'MonthlyIncome']
-categorical_features = df.select_dtypes(object).columns
+categorical_features = Xtrain.select_dtypes(object).columns
 
 
 # Set the clas weight to handle class imbalance
