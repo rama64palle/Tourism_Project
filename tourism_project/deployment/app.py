@@ -16,7 +16,7 @@ This application predicts whether a customer will purchase the newly introduced 
 # User input
 Age = st.number_input("Age", min_value=0, max_value=100, value=10)
 typeOfContact = st.selectbox("TypeofContact", ["Company Invited","Self Inquiry"])
-CityTier = st.selectbox("CityTier", ["Tier 1","Tier 2","Tier 3"])
+CityTier = st.selectbox("CityTier", ["1","2","3"])
 Occupation = st.selectbox("Occupation", ["Salaried", "Freelancer"])
 Gender = st.selectbox("Gender", ["Male","Female"])
 NumberOfPersonVisiting = st.number_input("NumberOfPersonVisiting", min_value=0, max_value=10, value=1)
