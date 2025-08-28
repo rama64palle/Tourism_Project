@@ -14,9 +14,9 @@ This application predicts whether a customer will purchase the newly introduced 
 """)
 
 # User input
-age = st.number_input("Age", min_value=0, max_value=100, value=10)
+Age = st.number_input("Age", min_value=0, max_value=100, value=10)
 typeOfContact = st.selectbox("TypeofContact", ["Company Invited","Self Inquiry"])
-cityTier = st.selectbox("CityTier", ["Tier 1","Tier 2","Tier 3"])
+CityTier = st.selectbox("CityTier", ["Tier 1","Tier 2","Tier 3"])
 Occupation = st.selectbox("Occupation", ["Salaried", "Freelancer"])
 Gender = st.selectbox("Gender", ["Male","Female"])
 NumberOfPersonVisiting = st.number_input("NumberOfPersonVisiting", min_value=0, max_value=10, value=1)
@@ -34,9 +34,9 @@ ProductPitched =  st.selectbox('ProductPitched',["Deluxe","Basic"])
 Designation = st.selectbox("Designation", ["Executive", "Manager", "Senior Manager", "AVP", "VP"])
 
 # Assemble input into DataFrame
-input_data = pd.DataFrame([{'age': age,
+input_data = pd.DataFrame([{'Age': Age,
                             'typeOfContact': typeOfContact,
-                            'cityTier': cityTier,
+                            'CityTier': CityTier,
                             'Occupation': Occupation,
                             'Gender': Gender,
                             'NumberOfPersonVisiting': NumberOfPersonVisiting,
