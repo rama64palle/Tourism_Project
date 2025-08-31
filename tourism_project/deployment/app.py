@@ -79,6 +79,28 @@ ProductPitched =  st.selectbox('ProductPitched', options=list(ENCODING_MAP_Produ
 Designation = st.selectbox("Designation", ["Executive", "Manager", "Senior Manager", "AVP", "VP"])
 
 
+# Assemble input into DataFrame
+input_data = pd.DataFrame([{'Age': Age,
+                            'typeOfContact': typeOfContact,
+                            'CityTier': CityTier,
+                            'Occupation': Occupation,
+                            'Gender': Gender,
+                            'NumberOfPersonVisiting': NumberOfPersonVisiting,
+                            'NumberOfFollowups': NumberOfFollowups,
+                            'PreferredPropertyStar': PreferredPropertyStar,
+                            'NumberOfTrips': NumberOfTrips,
+                            'Passport': Passport,
+                            'PitchSatisfactionScore': PitchSatisfactionScore,
+                            'OwnCar': OwnCar,
+                            'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
+                            'MaritalStatus': MaritalStatus,
+                            'MonthlyIncome': MonthlyIncome,
+                            'DurationOfPitch': DurationOfPitch,
+                            'ProductPitched': ProductPitched,
+                            'Designation': Designation,
+
+
+                            }])
 
 
 if st.button("Predict"):
