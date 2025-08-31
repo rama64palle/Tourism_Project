@@ -1,4 +1,4 @@
-import streamlit as st
+]import streamlit as st
 import pandas as pd
 from huggingface_hub import hf_hub_download
 import joblib
@@ -32,13 +32,13 @@ def format_label_CityTier(code):
     return ENCODING_MAP_CityTier[code]
 
 def format_label_Occupation(code):
-    return ENCODING_MAP_Occupation
+    return ENCODING_MAP_Occupation[code]
 
 def format_label_Gender(code):
     return ENCODING_MAP_Gender[code]
 
 def format_label_MaritalStatus(code):
-    return ENCODING_MAP_MaritalStatus
+    return ENCODING_MAP_MaritalStatus[code]
 
 def format_label_Designation(code):
     return ENCODING_MAP_Designation[code]
