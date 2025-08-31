@@ -1,4 +1,4 @@
-]import streamlit as st
+import streamlit as st
 import pandas as pd
 from huggingface_hub import hf_hub_download
 import joblib
@@ -44,7 +44,7 @@ def format_label_Designation(code):
     return ENCODING_MAP_Designation[code]
 
 def format_label_ProductPitched(code):
-    return ENCODING_MAP_ProductPitched
+    return ENCODING_MAP_ProductPitched[code]
 
 def format_label_Passport(code):
     return ENCODING_MAP_Passport[code]
@@ -97,9 +97,7 @@ input_data = pd.DataFrame([{'Age': Age,
                             'MonthlyIncome': MonthlyIncome,
                             'DurationOfPitch': DurationOfPitch,
                             'ProductPitched': ProductPitched,
-                            'Designation': Designation,
-
-
+                            'Designation': Designation
                             }])
 
 
